@@ -24,7 +24,7 @@ Dependencies:
         .. code-block:: bash
 
             pip install reme-ai
-    For more information, visit: https://github.com/modelscope/reMe
+    For more information, visit: https://github.com/jarvis-for-you/reMe
 
 Subclasses:
     This base class is extended by specific memory type implementations:
@@ -270,7 +270,7 @@ class ReMeLongTermMemoryBase(LongTermMemoryBase, metaclass=ABCMeta):
             raise ImportError(
                 "The 'reme_ai' library is required for ReMe-based "
                 "long-term memory. Please install it by `pip install reme-ai`,"
-                "and visit: https://github.com/modelscope/reMe for more "
+                "and visit: https://github.com/jarvis-for-you/reMe for more "
                 "information.",
             ) from e
 

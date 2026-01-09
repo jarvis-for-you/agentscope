@@ -604,6 +604,6 @@ Follow this pattern for tool memory:
 
 ## References
 
-- [ReMe Library](https://github.com/modelscope/ReMe) - Core memory implementation
-- [AgentScope Documentation](https://github.com/modelscope/agentscope) - Framework documentation
+- [ReMe Library](https://github.com/jarvis-for-you/ReMe) - Core memory implementation
+- [AgentScope Documentation](https://github.com/jarvis-for-you/agentscope) - Framework documentation
 - [DashScope API](https://dashscope.aliyun.com/) - Model API for examples
