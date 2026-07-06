@@ -1,47 +1,37 @@
 # -*- coding: utf-8 -*-
 """The retrieval-augmented generation (RAG) module in AgentScope."""
 
+from ._chunker import ApproxTokenChunker, ChunkerBase
 from ._document import (
-    DocMetadata,
-    Document,
+    Section,
+    Chunk,
 )
-from ._reader import (
-    ReaderBase,
-    TextReader,
-    PDFReader,
-    ImageReader,
-    WordReader,
-    ExcelReader,
-    PowerPointReader,
-)
-from ._store import (
-    VDBStoreBase,
-    QdrantStore,
+from ._parser import ImageParser, ParserBase, PDFParser, PPTParser, TextParser
+from ._vdb import (
+    DocumentSummary,
     MilvusLiteStore,
-    OceanBaseStore,
-    MongoDBStore,
-    AlibabaCloudMySQLStore,
+    VectorStoreBase,
+    VectorRecord,
+    VectorSearchResult,
+    QdrantStore,
 )
-from ._knowledge_base import KnowledgeBase
-from ._simple_knowledge import SimpleKnowledge
-
+from ._knowledge import KnowledgeBase
 
 __all__ = [
-    "ReaderBase",
-    "TextReader",
-    "PDFReader",
-    "ImageReader",
-    "WordReader",
-    "ExcelReader",
-    "PowerPointReader",
-    "DocMetadata",
-    "Document",
-    "VDBStoreBase",
-    "QdrantStore",
+    "ApproxTokenChunker",
+    "ChunkerBase",
+    "Chunk",
+    "DocumentSummary",
+    "ImageParser",
     "MilvusLiteStore",
-    "OceanBaseStore",
-    "MongoDBStore",
-    "AlibabaCloudMySQLStore",
+    "ParserBase",
+    "PDFParser",
+    "PPTParser",
+    "TextParser",
+    "Section",
+    "VectorStoreBase",
+    "VectorRecord",
+    "VectorSearchResult",
+    "QdrantStore",
     "KnowledgeBase",
-    "SimpleKnowledge",
 ]
